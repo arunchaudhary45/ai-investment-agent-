@@ -73,7 +73,7 @@ graph TD
 ```
 
 ### Architecture Details
-1. **Frontend App Router (`app/page.tsx`)**: Managing reactive search status, displaying custom progress skeletons, and visually adapting components depending on whether the agent recommended an `INVEST` or `PASS` verdict.
+1. **Frontend App Router (`app/page.tsx`)**: Managing reactive search status, displaying custom progress skeletons, and formatting the detailed agent report using a custom AST-style markdown parser that separates detailed analysis cards from decision reasoning blocks.
 2. **API Endpoint (`app/api/research/route.ts`)**: Secure server-side handler that reads client requests and proxies them to the AI agent execution context, ensuring API keys are never exposed client-side.
 3. **Core Agent (`lib/investmentAgent.ts`)**:
    - Initialized with **LangGraph's Prebuilt React Agent** (`createReactAgent`).
@@ -87,6 +87,7 @@ graph TD
 
 - **Next.js unified stack**: We selected Next.js for both frontend and backend to streamline hosting on Vercel and secure environment variables in a single codebase.
 - **Fail-Safe User Experience**: Real-time LLM services are prone to rate-limits and credential issues. We implemented high-quality simulated reports for representative tech giants (Apple, Tesla, Google, Microsoft, Nvidia) as a fallback. This guarantees that evaluators can fully inspect the parsing logic, color shifts, and UI visual states even when API keys hit free-tier quotas.
+- **Custom Markdown AST Parser**: Instead of rendering the raw markdown report inside a plain `<pre>` box, we built a custom React parsing engine that parses headers, paragraph text, and bullet lists into a highly polished, responsive PDF-style institutional analysis report. This layout separates detailed analysis cards from reasoning checkmarks dynamically.
 - **Tailwind CSS v4 & Theme Colors**: Configured custom tokens inside `app/globals.css` (e.g. `--color-invest`, `--color-pass`, `--color-surface`) to keep the design highly consistent and ensure CSS values are mapped semantically.
 
 ---
