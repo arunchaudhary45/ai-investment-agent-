@@ -97,39 +97,51 @@ graph TD
 Here are example outputs showing how the agent makes decisions based on real-time news and financial analysis:
 
 ### 🟢 Example 1: Apple Inc. (INVEST)
-```
+```markdown
 ## INVESTMENT ANALYSIS: APPLE INC. (NASDAQ: AAPL)
 
 ### 1. Market Positioning & Sentiment
 Apple maintains an incredibly strong consumer ecosystem with an active installed base of over 2.2 billion devices. Sentiment is highly positive, driven by the rollout of Apple Intelligence (generative AI features integrated directly into iOS/macOS) which is expected to catalyze a multi-year iPhone upgrade super-cycle.
 
 ### 2. Financial Health
-*   **Service Revenue:** Services continue to grow at double digits, now representing over 25% of total revenue with high-margin profiles (~70% gross margins).
+*   **Service Revenue:** Services (App Store, iCloud, Apple Music, Pay) continue to grow at double digits, now representing over 25% of total revenue with high-margin profiles (~70% gross margins).
 *   **Shareholder Returns:** Unrivaled capital allocation with over $110 billion allocated to share buybacks annually alongside a stable dividend.
+*   **Balance Sheet:** Over $150 billion in cash and marketable securities, offset by manageable debt, yielding a highly resilient net cash position.
+
+### 3. Risk Assessment
+*   **Hardware Saturation:** iPhone growth relies heavily on replacement cycles and price-point increases.
+*   **Regulatory Pressures:** Antitrust challenges to the App Store in the US and Europe could impact high-margin services revenue.
 
 ### VERDICT: INVEST
 
 **Reasoning:**
 *   **AI Upgrade Cycle:** Hardware sales are poised to accelerate as consumers upgrade to access on-device AI features.
 *   **Ecosystem Moat:** High customer switching costs and high-margin services revenue provide a robust safety net during macroeconomic downturns.
+*   **Compounding Capital:** Active share repurchases continuously increase earnings per share (EPS), making Apple a premium long-term compounder.
 ```
 
 ### 🔴 Example 2: Tesla Inc. (PASS)
-```
+```markdown
 ## INVESTMENT ANALYSIS: TESLA INC. (NASDAQ: TSLA)
 
 ### 1. Market Positioning & Sentiment
-Tesla remains the global pioneer and brand leader in electric vehicles (EVs). However, market sentiment has shifted from hyper-growth to caution due to slowing EV adoption rates globally and intense competition from Chinese manufacturers.
+Tesla remains the global pioneer and brand leader in electric vehicles (EVs). However, market sentiment has shifted from hyper-growth to caution due to slowing EV adoption rates globally, margin pressure from aggressive price cuts, and intense competition from Chinese manufacturers like BYD. The focus has pivoted to autonomy (FSD) and Robotaxi (Cybercab), which are high-risk, high-reward ventures.
 
 ### 2. Financial Health
-*   **Operating Margins:** Compressed significantly from peak levels of ~16% down to 8-10% as a result of price-cutting strategies.
-*   **Valuation:** Trading at a forward P/E multiple of >60x, which is extremely expensive for a manufacturing company.
+*   **Operating Margins:** Compressed significantly from peak levels of ~16% down to 8-10% as a result of price-cutting strategies to maintain volume.
+*   **Valuation:** Trading at a forward P/E multiple of >60x, which is extremely expensive for a manufacturing company and relies heavily on future autonomous driving and AI software revenues.
+*   **Balance Sheet:** Solid liquidity profile with over $25 billion in cash and cash equivalents, and negligible long-term debt.
+
+### 3. Risk Assessment
+*   **Execution Risk:** FSD technology deployment and regulatory approvals face substantial legal and technical hurdles.
+*   **Margin Risk:** Legacy automakers ramping up hybrid vehicles and cheaper Chinese EVs limit Tesla's pricing power.
 
 ### VERDICT: PASS
 
 **Reasoning:**
-*   **Overvaluation:** The current stock price discounts immediate success in FSD and Robotaxis, leaving little margin of safety for investors.
+*   **Overvaluation:** The current stock price discounts immediate success in FSD, Robotaxis, and humanoid robotics, leaving little margin of safety for investors.
 *   **Core business slowdown:** Traditional auto sales margins are compressing, and pure EV demand is maturing.
+*   **Opportunity Cost:** Better risk-adjusted returns can be found in other mega-cap tech or value positions until autonomous metrics prove clear monetization.
 ```
 
 ---
